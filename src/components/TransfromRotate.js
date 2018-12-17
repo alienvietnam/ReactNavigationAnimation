@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
 import React, { Component } from "react";
-import { Text, Animated } from "react-native";
+import { Animated } from "react-native";
 
 class TransformRotate extends Component {
   constructor(props) {
@@ -35,9 +35,10 @@ class TransformRotate extends Component {
           height: 200,
           backgroundColor: 'red',
           transform: [{ rotate }, { rotateY: rotate }],
+          ...this.props.style
         }}
       >
-        <Text>Animated Demo</Text>
+        {this.props.children}
       </Animated.View>
     );
   }

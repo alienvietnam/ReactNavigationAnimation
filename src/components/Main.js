@@ -4,7 +4,8 @@ import { View } from "react-native";
 //import FadeView from "./FadeView";
 //import SlideView from "./SlideView";
 //import TransformView from "./TranformView";
-import TransformRotate from "./TransfromRotate";
+//import TransformRotate from "./TransfromRotate";
+import HelloApp from "./HelloApp";
 
 class Main extends Component {
   static navigationOptions = {
@@ -20,7 +21,14 @@ class Main extends Component {
           backgroundColor: "lightblue"
         }}
       >
-        <TransformRotate />
+        {/* <TransformRotate style={{ backgroundColor: 'yellow' }} >
+            <Text style={{ fontSize: 30 }}>Transfrom View 1</Text>
+        </TransformRotate>
+        <TransformRotate style={{ height: 100 }} >
+            <Text style={{ fontSize: 30 }}>Transfrom View 2</Text>
+        </TransformRotate> */}
+
+            <HelloApp />
       </View>
     );
   }
