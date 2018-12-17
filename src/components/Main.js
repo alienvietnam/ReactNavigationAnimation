@@ -5,7 +5,9 @@ import { View } from "react-native";
 //import SlideView from "./SlideView";
 //import TransformView from "./TranformView";
 //import TransformRotate from "./TransfromRotate";
-import HelloApp from "./HelloApp";
+//import HelloApp from "./HelloApp";
+//import ResponseView from "./Response";
+import MovieImage from "./movieImage";
 
 class Main extends Component {
   static navigationOptions = {
@@ -28,7 +30,7 @@ class Main extends Component {
             <Text style={{ fontSize: 30 }}>Transfrom View 2</Text>
         </TransformRotate> */}
 
-            <HelloApp />
+        <MovieImage />
       </View>
     );
   }
