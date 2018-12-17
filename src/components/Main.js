@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import { View } from "react-native";
 //import FadeView from "./FadeView";
 //import SlideView from "./SlideView";
-import TransformView from "./TranformView";
+//import TransformView from "./TranformView";
+import TransformRotate from "./TransfromRotate";
 
 class Main extends Component {
   static navigationOptions = {
@@ -19,7 +20,7 @@ class Main extends Component {
           backgroundColor: "lightblue"
         }}
       >
-        <TransformView />
+        <TransformRotate />
       </View>
     );
   }
